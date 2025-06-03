@@ -8,7 +8,8 @@ class TrafficLightRecord:
         self.waiting = waiting
 
     def __repr__(self):
-        return f"<Record #{self.id}: {self.start_time} - {self.end_time}, Cars: {self.passed}, Waiting: {self.waiting}>"
+        return f"[{self.start_time} ➜ {self.end_time}] — Cars Passed: {self.passed}, Waiting: {self.waiting}"
+
     
     # Добавим сортировку в метод класса
     @staticmethod
