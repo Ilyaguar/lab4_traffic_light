@@ -10,7 +10,6 @@ class TrafficLightRecord:
     def __repr__(self):
         return f"[{self.start_time} ➜ {self.end_time}] — Cars Passed: {self.passed}, Waiting: {self.waiting}"
 
-    
     # Добавим сортировку в метод класса
     @staticmethod
     def sort_records(records):
