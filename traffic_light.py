@@ -14,4 +14,10 @@ class TrafficLightRecord:
     @staticmethod
     def sort_records(records):
         return sorted(records, key=lambda x: x.start_time)
+    
+    @staticmethod
+    def generate(records):
+        for r in records:
+            yield r
+
 
