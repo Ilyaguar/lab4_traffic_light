@@ -9,3 +9,9 @@ class TrafficLightRecord:
 
     def __repr__(self):
         return f"<Record #{self.id}: {self.start_time} - {self.end_time}, Cars: {self.passed}, Waiting: {self.waiting}>"
+    
+    # Добавим сортировку в метод класса
+    @staticmethod
+    def sort_records(records):
+        return sorted(records, key=lambda x: x.start_time)
+
